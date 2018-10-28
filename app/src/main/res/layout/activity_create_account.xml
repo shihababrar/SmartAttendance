@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/mantle"
+    tools:context="com.example.shihab.smartattendance.CreateAccountActivity">
+    <TextView
+        android:id="@+id/textViewUserInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="User Information"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/textViewUserInformation"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/userid" />
+
+    <EditText
+        android:id="@+id/editTextUserId"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/imageViewID"
+        android:layout_below="@id/textViewUserInformation"
+        android:hint="ID"
+        android:layout_marginLeft="20dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColorHint="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewID"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/username" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:hint="Username"
+        android:layout_below="@id/editTextUserId"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/imageViewName"
+        android:inputType="text"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColorHint="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageViewMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/emai" />
+
+    <EditText
+        android:id="@+id/editTextStudentEmailAddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+      android:layout_below="@id/editTextUserName"
+        android:layout_toRightOf="@id/imageViewMail"
+        android:hint="E-mail Address"
+        android:layout_marginLeft="20dp"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColorHint="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageViewPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/imageViewMail"
+        android:src="@drawable/password2" />
+
+    <EditText
+        android:id="@+id/editTextUserPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextStudentEmailAddress"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/imageViewPass"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColorHint="@color/black" />
+
+
+    <ImageButton
+        android:id="@+id/idImageButtonCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUserPassword"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="188dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/signup_resize3" />
+
+</RelativeLayout>

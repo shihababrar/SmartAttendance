@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="@drawable/mantle"
+
+    tools:context="com.example.shihab.smartattendance.LoginActivity">
+
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/sa"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/user" />
+
+        <EditText
+            android:id="@+id/editTextStudentId"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageViewID"
+            android:layout_marginLeft="10dp"
+            android:hint="ID"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColorHint="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/editTextStudentId"
+            android:src="@drawable/password" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextStudentId"
+            android:layout_toRightOf="@id/imageViewPassword"
+            android:layout_marginLeft="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColorHint="@color/black" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+            android:textColor="#FFC837"
+        android:background="#085078"
+
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textViewForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:gravity="right"
+            android:textColor="#D7DDE8"
+            android:layout_marginTop="4dp"
+            />
+        <Button
+            android:id="@+id/buttonHD"
+            android:layout_below="@+id/textViewForgotPassword"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:textColor="@color/white"
+            android:text="Hellll"
+            />
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:layout_marginTop="75dp"
+    >
+    <TextView
+        android:id="@+id/idtextViewLetsCreateAnAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Let's Create an Account!!"
+        android:textColor="#D7DDE8"
+        android:gravity="center"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/buttonCreateAccount"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="31dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sign UP"
+            android:textColor="#FFC837"
+            android:background="#085078"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

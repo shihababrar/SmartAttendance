@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mantle"
+    android:padding="10dp"
+    tools:context="com.example.shihab.smartattendance.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+        <ImageView
+            android:id="@+id/imageViewProfileUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textViewShowWelcome"
+            android:src="@drawable/allgenderuser"
+            android:layout_marginLeft="180dp"/>
+
+        <TextView
+            android:id="@+id/textViewShowWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Welcome,"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/buttonHD2"
+            android:layout_width="59dp"
+            android:layout_height="20dp"
+            android:text="button"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/textViewShowWelcome"/>
+
+        <TextView
+            android:id="@+id/textViewUserID"
+            android:layout_below="@id/textViewShowWelcome"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1.5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/textViewShowCourseNames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/textViewUserID"
+            />
+
+       <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/calendarView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="30dp"
+           android:layout_below="@id/textViewShowWelcome"
+           app:mcv_showOtherDates="all"
+           app:mcv_selectionColor="#FFC837"
+           />
+
+
+   </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        fab:context="com.android_examples.floatingactionmenu_android_examplescom.MainActivity">
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        fab:context="com.android_examples.floatingactionmenu_android_examplescom.MainActivity">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/FloatingActionMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            fab:menu_fab_size="normal"
+            fab:menu_showShadow="true"
+            fab:menu_shadowColor="#66000000"
+            fab:menu_shadowRadius="4dp"
+            fab:menu_shadowXOffset="1dp"
+            fab:menu_shadowYOffset="3dp"
+            fab:menu_colorNormal="#FFC837"
+            fab:menu_colorPressed="#FFC837"
+            fab:menu_colorRipple="#99FFFFFF"
+            fab:menu_animationDelayPerItem="50"
+            fab:menu_icon="@drawable/fab_add"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_labels_margin="0dp"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_paddingTop="4dp"
+            fab:menu_labels_paddingRight="8dp"
+            fab:menu_labels_paddingBottom="4dp"
+            fab:menu_labels_paddingLeft="8dp"
+            fab:menu_labels_padding="8dp"
+            fab:menu_labels_textColor="#FFFFFF"
+            fab:menu_labels_textSize="14sp"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_colorNormal="#333333"
+            fab:menu_labels_colorPressed="#444444"
+            fab:menu_labels_colorRipple="#66FFFFFF"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_style="@style/YourCustomLabelsStyle"
+            fab:menu_labels_position="left"
+            fab:menu_openDirection="up"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_fab_label="your_label_here"
+            fab:menu_fab_show_animation="@anim/my_show_animation"
+            fab:menu_fab_hide_animation="@anim/my_hide_animation">
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/subFloatingMenuQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qr"
+                fab:fab_label="Sub Menu Item 1"
+                fab:fab_size="mini" />
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/subFloatingMenuViewAttendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check_attendance"
+                fab:fab_label="Sub Menu Item 2"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/subFloatingMenuSendMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mail"
+                fab:fab_label="Sub Menu Item 3"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabLogOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logout23"
+                fab:fab_label="Sub Menu Item 3"
+                fab:fab_size="mini" />
+        </com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>
+    
+    
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
